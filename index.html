@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Exercício 1-->
+    <h1>Verifique se o número é Par ou Ímpar</h1>
+    Número: <input type="text" id="n">
+    <input type="button" value="Verificar" onclick="numero()">
+<hr>
+    <!--Exercício 2-->
+    <h1>Gerador de Tabuada</h1>
+    <label for="n1">Digite um número inteiro:</label>
+    <input type="number" id="n1" />
+    <button onclick="gerarTabuada()">Ver Tabuada</button>
+
+    <h2>Resultado:</h2>
+    <pre id="resultado">Nenhuma tabuada exibida ainda.</pre>
+<hr>
+    <!--Exercício 3-->
+    <h1>Contador</h1>
+    <h2 id="valor">0</h2>
+
+    <button onclick="diminuir()">- Diminuir</button>
+    <button onclick="aumentar()">+ Aumentar</button>
+<hr>
+    <!--Exercício 4-->
+    <h1>Jogo de Adivinhação</h1>
+  
+    <p>Digite um número de 1 a 10:</p>
+    <input type="number" id="n2" min="1" max="10" />
+    <button onclick="verificar()">Verificar</button>
+
+    <p id="resultado1"></p>
+<hr>
+    <!--Exercício 5-->
+    <h1>Aprovado ou Reprovado?</h1>
+
+    <p>Digite suas 3 notas:</p>
+    <label for="nota1">Nota 1: </label>
+    <input type="number" id="nota1" step="0" required>
+    <br>
+
+    <label for="nota2">Nota 2: </label>
+    <input type="number" id="nota2" step="0" required>
+    <br>
+
+    <label for="nota3">Nota 3: </label>
+    <input type="number" id="nota3" step="0" required>
+    <br>
+
+    <button onclick="media()">Verificar Situação</button>
+    <h2 id="resultado2"></h2>
+<hr>
+    <!--Exercício 6-->
+    <section class="perfil">
+        <h1>Gabriela Tizeu</h1>
+        <img src="foto-perfil.jpg" alt="Foto de Gabriela" class="foto-perfil">
+        <p>Olá! Meu nome é Gabriela e gosto muito de geografia, artes plásticas e cinema. Tenho 16 anos e estudo no Instituto Federal.</p>
+        <h2>Meus hobbies:</h2>
+        <ul>
+            <li>Jogar quizzes</li>
+            <li>Assistir filmes</li>
+            <li>Desenhar</li>
+        </ul>
+    </section>
+<hr>
+    <!--Exercício-->
+    <section class="contato">
+        <h2>Fale comigo</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+<hr>
+    <!--Exercício 9-->
+    <section class="tema">
+        <button id="mudar-cor">Mudar Cor de Fundo</button>
+    </section>
+<hr>
+    <!--Exercício 10-->
+    <section class="imc">
+        <h2>Calcule seu IMC</h2>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ex: 70" step="0.1">
+    
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+    
+        <button id="calcular-imc">Calcular IMC</button>
+    
+        <p id="resultado-imc"></p>
+    </section>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>
