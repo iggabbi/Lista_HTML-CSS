@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11-20</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--Exercício 11-->
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <input type="number" id="n1" placeholder="Número 1" />
+        <input type="number" id="n2" placeholder="Número 2" />
+        <div class="buttons">
+            <button onclick="calculadora('+')">+</button>
+            <button onclick="calculadora('-')">−</button>
+            <button onclick="calculadora('*')">×</button>
+            <button onclick="calculadora('/')">÷</button>
+        </div>
+        <p id="resultado">Resultado: </p>
+    </div>
+<hr>
+    <!--Exercício 12-->
+    <div class="quiz">
+        <h2>Pergunta</h2>
+        <p>Qual é a capital do Brasil?</p>
+        <form id="quizForm">
+          <label><input type="radio" name="quiz" value="A" /> A) São Paulo</label><br>
+          <label><input type="radio" name="quiz" value="B" /> B) Rio de Janeiro</label><br>
+          <label><input type="radio" name="quiz" value="C" /> C) Brasília</label><br>
+          <label><input type="radio" name="quiz" value="D" /> D) Salvador</label><br>
+        </form>
+        <button onclick="checarResposta()">Verificar Resposta</button>
+        <p id="quizResultado"></p>
+      </div>
+<hr>
+    <!--Exercício 13-->
+    <div class="temperature-converter">
+        <h2>Conversor de Temperatura</h2>
+        <input type="number" id="tempInput" placeholder="Digite a temperatura" />
+        <div class="buttons">
+          <button onclick="converterParaC()">Converter para °C</button>
+          <button onclick="converterParaF()">Converter para °F</button>
+        </div>
+        <p id="tempResultado">Resultado: </p>
+    </div>
+<hr>
+    <!--Exercício 14-->
+    <div class="saudacao">
+        <h2>Saudação</h2>
+        <input type="text" id="nomeUsuario" placeholder="Digite seu nome" />
+        <button onclick="mostrarSaudacao()">Exibir Saudação</button>
+    </div>      
+<hr>
+    <!--Exercício 15-->
+    <div class="cronometro">
+        <h2>Cronômetro</h2>
+        <p id="tempo">00:00:00</p>
+        <div class="buttons">
+          <button onclick="iniciarCronometro()">Iniciar</button>
+          <button onclick="pausarCronometro()">Pausar</button>
+          <button onclick="zerarCronometro()">Zerar</button>
+        </div>
+    </div>
+<hr>
+    <!--Exercício 16-->
+    <div class="troca-fundo">
+        <h2>Escolha a Cor de Fundo</h2>
+        <form id="formCores">
+          <label><input type="radio" name="cor" value="red" /> Vermelho</label><br>
+          <label><input type="radio" name="cor" value="blue" /> Azul</label><br>
+          <label><input type="radio" name="cor" value="yellow" /> Amarelo</label><br>
+          <label><input type="radio" name="cor" value="white" /> Branco</label><br>
+        </form>
+    </div>
+<hr>
+    <!--Exercício 17-->
+    <div class="quiz-matematica">
+        <h2>Quiz de Matemática</h2>
+        <form id="formQuizMatematica">
+          <!-- Questão 1 -->
+          <p>1) Quanto é 7 + 5?</p>
+          <label><input type="radio" name="q1" value="A"> A) 10</label><br>
+          <label><input type="radio" name="q1" value="B"> B) 11</label><br>
+          <label><input type="radio" name="q1" value="C"> C) 12</label><br>
+          <label><input type="radio" name="q1" value="D"> D) 13</label><br><br>
+      
+          <!-- Questão 2 -->
+          <p>2) Quanto é 9 × 6?</p>
+          <label><input type="radio" name="q2" value="A"> A) 45</label><br>
+          <label><input type="radio" name="q2" value="B"> B) 54</label><br>
+          <label><input type="radio" name="q2" value="C"> C) 56</label><br>
+          <label><input type="radio" name="q2" value="D"> D) 48</label><br><br>
+      
+          <!-- Questão 3 -->
+          <p>3) Qual é a raiz quadrada de 81?</p>
+          <label><input type="radio" name="q3" value="A"> A) 8</label><br>
+          <label><input type="radio" name="q3" value="B"> B) 9</label><br>
+          <label><input type="radio" name="q3" value="C"> C) 10</label><br>
+          <label><input type="radio" name="q3" value="D"> D) 11</label><br><br>
+      
+          <button type="button" onclick="corrigirQuizMatematica()">Verificar Respostas</button>
+        </form>
+        <p id="resultadoQuizMatematica"></p>
+    </div>
+<hr>
+    <!--Exercício 18-->
+    <div class="botao-cor">
+        <h2>Botão com Cor Aleatória</h2>
+        <button id="btnCor">Clique para mudar a cor</button>
+    </div>
+<hr>
+    <!--Exercício 19-->
+    <div class="contador-cliques">
+        <h2>Contador de Cliques</h2>
+        <button id="btnContador">Clique Aqui</button>
+        <p>Você clicou <span id="contador">0</span> vezes.</p>
+    </div>
+<hr>
+    <!--Exercício 20-->
+    <div class="hover-texto">
+        <h2>Texto com Hover</h2>
+        <p id="textoHover">Passe o mouse aqui para ver a mágica acontecer!</p>
+    </div>
+      
+    <script src="funcoes.js"></script>
+</body>
+</html>
